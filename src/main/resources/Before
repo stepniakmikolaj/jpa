@@ -1,0 +1,167 @@
+****************** BEGIN OF FETCHING *******************
+*** STEP 1 – query for invoices ***
+Hibernate: select task0_.id as id1_6_, task0_.name as name2_6_, task0_.status as status3_6_ from task task0_ where task0_.id in (18 , 19)
+*** STEP 2 – read data from task ***
+com.kodilla.jpa.domain.Task@4f67e3df
+*** STEP 3 – read the name ***
+task1
+*** STEP 4 – read the status ***
+RED
+*** STEP 5 – read persons ***
+Hibernate: select persons0_.task_id as task_id5_3_0_, persons0_.id as id1_3_0_, persons0_.id as id1_3_1_, persons0_.first_name as first_na2_3_1_, persons0_.last_name as last_nam3_3_1_, persons0_.subtask_id as subtask_4_3_1_, persons0_.task_id as task_id5_3_1_, subtask1_.id as id1_5_2_, subtask1_.name as name2_5_2_, subtask1_.status as status3_5_2_, subtask1_.task_id as task_id4_5_2_, task2_.id as id1_6_3_, task2_.name as name2_6_3_, task2_.status as status3_6_3_ from person persons0_ left outer join subtask subtask1_ on persons0_.subtask_id=subtask1_.id left outer join task task2_ on subtask1_.task_id=task2_.id where persons0_.task_id=?
+*** STEP 6 – read the person ***
+com.kodilla.jpa.domain.Person@664e5dee
+*** STEP 7 – read first name ***
+fistName2
+*** STEP 8 – read last name ***
+LastName2
+*** STEP 6 – read the person ***
+com.kodilla.jpa.domain.Person@cb03411
+*** STEP 7 – read first name ***
+fistName3
+*** STEP 8 – read last name ***
+LastName3
+*** STEP 6 – read the person ***
+com.kodilla.jpa.domain.Person@74aa9c72
+*** STEP 7 – read first name ***
+fistName1
+*** STEP 8 – read last name ***
+LastName1
+*** STEP 6 – read the person ***
+com.kodilla.jpa.domain.Person@58ec7116
+*** STEP 7 – read first name ***
+fistName4
+*** STEP 8 – read last name ***
+LastName4
+*** STEP 9 – read subtasks ***
+Hibernate: select subtasks0_.task_id as task_id4_5_0_, subtasks0_.id as id1_5_0_, subtasks0_.id as id1_5_1_, subtasks0_.name as name2_5_1_, subtasks0_.status as status3_5_1_, subtasks0_.task_id as task_id4_5_1_ from subtask subtasks0_ where subtasks0_.task_id=?
+*** STEP 10 – read the subtask ***
+com.kodilla.jpa.domain.Subtask@431f1eaf
+*** STEP 11 – read the subtask name ***
+subtask1_2
+*** STEP 12 – read the subtask status ***
+YELLOW
+*** STEP 13 – read subtask persons ***
+Hibernate: select persons0_.subtask_id as subtask_4_3_0_, persons0_.id as id1_3_0_, persons0_.id as id1_3_1_, persons0_.first_name as first_na2_3_1_, persons0_.last_name as last_nam3_3_1_, persons0_.subtask_id as subtask_4_3_1_, persons0_.task_id as task_id5_3_1_, task1_.id as id1_6_2_, task1_.name as name2_6_2_, task1_.status as status3_6_2_ from person persons0_ left outer join task task1_ on persons0_.task_id=task1_.id where persons0_.subtask_id=?
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@664e5dee
+*** STEP 15 – read first name ***
+fistName2
+*** STEP 16 – read last name ***
+LastName2
+*** STEP 10 – read the subtask ***
+com.kodilla.jpa.domain.Subtask@4c59e45e
+*** STEP 11 – read the subtask name ***
+subtask1_3
+*** STEP 12 – read the subtask status ***
+YELLOW
+*** STEP 13 – read subtask persons ***
+Hibernate: select persons0_.subtask_id as subtask_4_3_0_, persons0_.id as id1_3_0_, persons0_.id as id1_3_1_, persons0_.first_name as first_na2_3_1_, persons0_.last_name as last_nam3_3_1_, persons0_.subtask_id as subtask_4_3_1_, persons0_.task_id as task_id5_3_1_, task1_.id as id1_6_2_, task1_.name as name2_6_2_, task1_.status as status3_6_2_ from person persons0_ left outer join task task1_ on persons0_.task_id=task1_.id where persons0_.subtask_id=?
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@cb03411
+*** STEP 15 – read first name ***
+fistName3
+*** STEP 16 – read last name ***
+LastName3
+*** STEP 10 – read the subtask ***
+com.kodilla.jpa.domain.Subtask@2c768ada
+*** STEP 11 – read the subtask name ***
+subtask1_1
+*** STEP 12 – read the subtask status ***
+RED
+*** STEP 13 – read subtask persons ***
+Hibernate: select persons0_.subtask_id as subtask_4_3_0_, persons0_.id as id1_3_0_, persons0_.id as id1_3_1_, persons0_.first_name as first_na2_3_1_, persons0_.last_name as last_nam3_3_1_, persons0_.subtask_id as subtask_4_3_1_, persons0_.task_id as task_id5_3_1_, task1_.id as id1_6_2_, task1_.name as name2_6_2_, task1_.status as status3_6_2_ from person persons0_ left outer join task task1_ on persons0_.task_id=task1_.id where persons0_.subtask_id=?
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@74aa9c72
+*** STEP 15 – read first name ***
+fistName1
+*** STEP 16 – read last name ***
+LastName1
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@58ec7116
+*** STEP 15 – read first name ***
+fistName4
+*** STEP 16 – read last name ***
+LastName4
+*** STEP 2 – read data from task ***
+com.kodilla.jpa.domain.Task@6d2dc9d2
+*** STEP 3 – read the name ***
+task2
+*** STEP 4 – read the status ***
+YELLOW
+*** STEP 5 – read persons ***
+Hibernate: select persons0_.task_id as task_id5_3_0_, persons0_.id as id1_3_0_, persons0_.id as id1_3_1_, persons0_.first_name as first_na2_3_1_, persons0_.last_name as last_nam3_3_1_, persons0_.subtask_id as subtask_4_3_1_, persons0_.task_id as task_id5_3_1_, subtask1_.id as id1_5_2_, subtask1_.name as name2_5_2_, subtask1_.status as status3_5_2_, subtask1_.task_id as task_id4_5_2_, task2_.id as id1_6_3_, task2_.name as name2_6_3_, task2_.status as status3_6_3_ from person persons0_ left outer join subtask subtask1_ on persons0_.subtask_id=subtask1_.id left outer join task task2_ on subtask1_.task_id=task2_.id where persons0_.task_id=?
+*** STEP 6 – read the person ***
+com.kodilla.jpa.domain.Person@68217d41
+*** STEP 7 – read first name ***
+fistName5
+*** STEP 8 – read last name ***
+LastName5
+*** STEP 6 – read the person ***
+com.kodilla.jpa.domain.Person@3e5d4f6b
+*** STEP 7 – read first name ***
+fistName6
+*** STEP 8 – read last name ***
+LastName6
+*** STEP 6 – read the person ***
+com.kodilla.jpa.domain.Person@5ae95707
+*** STEP 7 – read first name ***
+fistName7
+*** STEP 8 – read last name ***
+LastName7
+*** STEP 6 – read the person ***
+com.kodilla.jpa.domain.Person@367b22e5
+*** STEP 7 – read first name ***
+fistName8
+*** STEP 8 – read last name ***
+LastName8
+*** STEP 9 – read subtasks ***
+Hibernate: select subtasks0_.task_id as task_id4_5_0_, subtasks0_.id as id1_5_0_, subtasks0_.id as id1_5_1_, subtasks0_.name as name2_5_1_, subtasks0_.status as status3_5_1_, subtasks0_.task_id as task_id4_5_1_ from subtask subtasks0_ where subtasks0_.task_id=?
+*** STEP 10 – read the subtask ***
+com.kodilla.jpa.domain.Subtask@62891fc8
+*** STEP 11 – read the subtask name ***
+subtask3_3
+*** STEP 12 – read the subtask status ***
+RED
+*** STEP 13 – read subtask persons ***
+Hibernate: select persons0_.subtask_id as subtask_4_3_0_, persons0_.id as id1_3_0_, persons0_.id as id1_3_1_, persons0_.first_name as first_na2_3_1_, persons0_.last_name as last_nam3_3_1_, persons0_.subtask_id as subtask_4_3_1_, persons0_.task_id as task_id5_3_1_, task1_.id as id1_6_2_, task1_.name as name2_6_2_, task1_.status as status3_6_2_ from person persons0_ left outer join task task1_ on persons0_.task_id=task1_.id where persons0_.subtask_id=?
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@5ae95707
+*** STEP 15 – read first name ***
+fistName7
+*** STEP 16 – read last name ***
+LastName7
+*** STEP 10 – read the subtask ***
+com.kodilla.jpa.domain.Subtask@39c1fe0b
+*** STEP 11 – read the subtask name ***
+subtask2_2
+*** STEP 12 – read the subtask status ***
+GREEN
+*** STEP 13 – read subtask persons ***
+Hibernate: select persons0_.subtask_id as subtask_4_3_0_, persons0_.id as id1_3_0_, persons0_.id as id1_3_1_, persons0_.first_name as first_na2_3_1_, persons0_.last_name as last_nam3_3_1_, persons0_.subtask_id as subtask_4_3_1_, persons0_.task_id as task_id5_3_1_, task1_.id as id1_6_2_, task1_.name as name2_6_2_, task1_.status as status3_6_2_ from person persons0_ left outer join task task1_ on persons0_.task_id=task1_.id where persons0_.subtask_id=?
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@3e5d4f6b
+*** STEP 15 – read first name ***
+fistName6
+*** STEP 16 – read last name ***
+LastName6
+*** STEP 10 – read the subtask ***
+com.kodilla.jpa.domain.Subtask@1ac45389
+*** STEP 11 – read the subtask name ***
+subtask2_1
+*** STEP 12 – read the subtask status ***
+RED
+*** STEP 13 – read subtask persons ***
+Hibernate: select persons0_.subtask_id as subtask_4_3_0_, persons0_.id as id1_3_0_, persons0_.id as id1_3_1_, persons0_.first_name as first_na2_3_1_, persons0_.last_name as last_nam3_3_1_, persons0_.subtask_id as subtask_4_3_1_, persons0_.task_id as task_id5_3_1_, task1_.id as id1_6_2_, task1_.name as name2_6_2_, task1_.status as status3_6_2_ from person persons0_ left outer join task task1_ on persons0_.task_id=task1_.id where persons0_.subtask_id=?
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@68217d41
+*** STEP 15 – read first name ***
+fistName5
+*** STEP 16 – read last name ***
+LastName5
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@367b22e5
+*** STEP 15 – read first name ***
+fistName8
+*** STEP 16 – read last name ***
+LastName8

@@ -1,0 +1,302 @@
+****************** BEGIN OF FETCHING *******************
+*** STEP 1 – query for invoices ***
+Hibernate: select task0_.id as id1_6_0_, persons1_.id as id1_3_1_, subtasks2_.id as id1_5_2_, persons3_.id as id1_3_3_, task0_.name as name2_6_0_, task0_.status as status3_6_0_, persons1_.first_name as first_na2_3_1_, persons1_.last_name as last_nam3_3_1_, persons1_.subtask_id as subtask_4_3_1_, persons1_.task_id as task_id5_3_1_, persons1_.task_id as task_id5_3_0__, persons1_.id as id1_3_0__, subtasks2_.name as name2_5_2_, subtasks2_.status as status3_5_2_, subtasks2_.task_id as task_id4_5_2_, subtasks2_.task_id as task_id4_5_1__, subtasks2_.id as id1_5_1__, persons3_.first_name as first_na2_3_3_, persons3_.last_name as last_nam3_3_3_, persons3_.subtask_id as subtask_4_3_3_, persons3_.task_id as task_id5_3_3_, persons3_.subtask_id as subtask_4_3_2__, persons3_.id as id1_3_2__ from task task0_ left outer join person persons1_ on task0_.id=persons1_.task_id left outer join subtask subtasks2_ on task0_.id=subtasks2_.task_id left outer join person persons3_ on subtasks2_.id=persons3_.subtask_id where task0_.id in (20 , 21)
+*** STEP 2 – read data from task ***
+com.kodilla.jpa.domain.Task@2e23c180
+*** STEP 3 – read the name ***
+task1
+*** STEP 4 – read the status ***
+RED
+*** STEP 5 – read persons ***
+*** STEP 6 – read the person ***
+com.kodilla.jpa.domain.Person@4efc25fc
+*** STEP 7 – read first name ***
+fistName4
+*** STEP 8 – read last name ***
+LastName4
+*** STEP 6 – read the person ***
+com.kodilla.jpa.domain.Person@4aaae508
+*** STEP 7 – read first name ***
+fistName2
+*** STEP 8 – read last name ***
+LastName2
+*** STEP 6 – read the person ***
+com.kodilla.jpa.domain.Person@f3021cb
+*** STEP 7 – read first name ***
+fistName3
+*** STEP 8 – read last name ***
+LastName3
+*** STEP 6 – read the person ***
+com.kodilla.jpa.domain.Person@396e6d9
+*** STEP 7 – read first name ***
+fistName1
+*** STEP 8 – read last name ***
+LastName1
+*** STEP 9 – read subtasks ***
+*** STEP 10 – read the subtask ***
+com.kodilla.jpa.domain.Subtask@7ee3d262
+*** STEP 11 – read the subtask name ***
+subtask1_1
+*** STEP 12 – read the subtask status ***
+RED
+*** STEP 13 – read subtask persons ***
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@396e6d9
+*** STEP 15 – read first name ***
+fistName1
+*** STEP 16 – read last name ***
+LastName1
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@396e6d9
+*** STEP 15 – read first name ***
+fistName1
+*** STEP 16 – read last name ***
+LastName1
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@396e6d9
+*** STEP 15 – read first name ***
+fistName1
+*** STEP 16 – read last name ***
+LastName1
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@396e6d9
+*** STEP 15 – read first name ***
+fistName1
+*** STEP 16 – read last name ***
+LastName1
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@4efc25fc
+*** STEP 15 – read first name ***
+fistName4
+*** STEP 16 – read last name ***
+LastName4
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@4efc25fc
+*** STEP 15 – read first name ***
+fistName4
+*** STEP 16 – read last name ***
+LastName4
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@4efc25fc
+*** STEP 15 – read first name ***
+fistName4
+*** STEP 16 – read last name ***
+LastName4
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@4efc25fc
+*** STEP 15 – read first name ***
+fistName4
+*** STEP 16 – read last name ***
+LastName4
+*** STEP 10 – read the subtask ***
+com.kodilla.jpa.domain.Subtask@6009bea
+*** STEP 11 – read the subtask name ***
+subtask1_2
+*** STEP 12 – read the subtask status ***
+YELLOW
+*** STEP 13 – read subtask persons ***
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@4aaae508
+*** STEP 15 – read first name ***
+fistName2
+*** STEP 16 – read last name ***
+LastName2
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@4aaae508
+*** STEP 15 – read first name ***
+fistName2
+*** STEP 16 – read last name ***
+LastName2
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@4aaae508
+*** STEP 15 – read first name ***
+fistName2
+*** STEP 16 – read last name ***
+LastName2
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@4aaae508
+*** STEP 15 – read first name ***
+fistName2
+*** STEP 16 – read last name ***
+LastName2
+*** STEP 10 – read the subtask ***
+com.kodilla.jpa.domain.Subtask@7bc6d27a
+*** STEP 11 – read the subtask name ***
+subtask1_3
+*** STEP 12 – read the subtask status ***
+YELLOW
+*** STEP 13 – read subtask persons ***
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@f3021cb
+*** STEP 15 – read first name ***
+fistName3
+*** STEP 16 – read last name ***
+LastName3
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@f3021cb
+*** STEP 15 – read first name ***
+fistName3
+*** STEP 16 – read last name ***
+LastName3
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@f3021cb
+*** STEP 15 – read first name ***
+fistName3
+*** STEP 16 – read last name ***
+LastName3
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@f3021cb
+*** STEP 15 – read first name ***
+fistName3
+*** STEP 16 – read last name ***
+LastName3
+*** STEP 2 – read data from task ***
+com.kodilla.jpa.domain.Task@75769ab0
+*** STEP 3 – read the name ***
+task2
+*** STEP 4 – read the status ***
+YELLOW
+*** STEP 5 – read persons ***
+*** STEP 6 – read the person ***
+com.kodilla.jpa.domain.Person@664e5dee
+*** STEP 7 – read first name ***
+fistName7
+*** STEP 8 – read last name ***
+LastName7
+*** STEP 6 – read the person ***
+com.kodilla.jpa.domain.Person@431f1eaf
+*** STEP 7 – read first name ***
+fistName6
+*** STEP 8 – read last name ***
+LastName6
+*** STEP 6 – read the person ***
+com.kodilla.jpa.domain.Person@6869a3b3
+*** STEP 7 – read first name ***
+fistName8
+*** STEP 8 – read last name ***
+LastName8
+*** STEP 6 – read the person ***
+com.kodilla.jpa.domain.Person@27ace0b1
+*** STEP 7 – read first name ***
+fistName5
+*** STEP 8 – read last name ***
+LastName5
+*** STEP 9 – read subtasks ***
+*** STEP 10 – read the subtask ***
+com.kodilla.jpa.domain.Subtask@cb03411
+*** STEP 11 – read the subtask name ***
+subtask2_2
+*** STEP 12 – read the subtask status ***
+GREEN
+*** STEP 13 – read subtask persons ***
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@431f1eaf
+*** STEP 15 – read first name ***
+fistName6
+*** STEP 16 – read last name ***
+LastName6
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@431f1eaf
+*** STEP 15 – read first name ***
+fistName6
+*** STEP 16 – read last name ***
+LastName6
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@431f1eaf
+*** STEP 15 – read first name ***
+fistName6
+*** STEP 16 – read last name ***
+LastName6
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@431f1eaf
+*** STEP 15 – read first name ***
+fistName6
+*** STEP 16 – read last name ***
+LastName6
+*** STEP 10 – read the subtask ***
+com.kodilla.jpa.domain.Subtask@4c59e45e
+*** STEP 11 – read the subtask name ***
+subtask3_3
+*** STEP 12 – read the subtask status ***
+RED
+*** STEP 13 – read subtask persons ***
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@664e5dee
+*** STEP 15 – read first name ***
+fistName7
+*** STEP 16 – read last name ***
+LastName7
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@664e5dee
+*** STEP 15 – read first name ***
+fistName7
+*** STEP 16 – read last name ***
+LastName7
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@664e5dee
+*** STEP 15 – read first name ***
+fistName7
+*** STEP 16 – read last name ***
+LastName7
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@664e5dee
+*** STEP 15 – read first name ***
+fistName7
+*** STEP 16 – read last name ***
+LastName7
+*** STEP 10 – read the subtask ***
+com.kodilla.jpa.domain.Subtask@6ab4ba9f
+*** STEP 11 – read the subtask name ***
+subtask2_1
+*** STEP 12 – read the subtask status ***
+RED
+*** STEP 13 – read subtask persons ***
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@27ace0b1
+*** STEP 15 – read first name ***
+fistName5
+*** STEP 16 – read last name ***
+LastName5
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@27ace0b1
+*** STEP 15 – read first name ***
+fistName5
+*** STEP 16 – read last name ***
+LastName5
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@27ace0b1
+*** STEP 15 – read first name ***
+fistName5
+*** STEP 16 – read last name ***
+LastName5
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@27ace0b1
+*** STEP 15 – read first name ***
+fistName5
+*** STEP 16 – read last name ***
+LastName5
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@6869a3b3
+*** STEP 15 – read first name ***
+fistName8
+*** STEP 16 – read last name ***
+LastName8
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@6869a3b3
+*** STEP 15 – read first name ***
+fistName8
+*** STEP 16 – read last name ***
+LastName8
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@6869a3b3
+*** STEP 15 – read first name ***
+fistName8
+*** STEP 16 – read last name ***
+LastName8
+*** STEP 14 – read the person ***
+com.kodilla.jpa.domain.Person@6869a3b3
+*** STEP 15 – read first name ***
+fistName8
+*** STEP 16 – read last name ***
+LastName8
+****************** END OF FETCHING *******************
